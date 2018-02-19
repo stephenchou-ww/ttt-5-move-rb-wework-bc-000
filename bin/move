@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require_relative '../lib/move.rb'
-require "pry"
 
 
 # Code your CLI Here
@@ -15,5 +14,5 @@ puts "Where would you like to go?"
 input = gets.strip
 move_index = input_to_index(input)
 move(board, move_index, "X")
-binding.pry
+
 display_board(board)
